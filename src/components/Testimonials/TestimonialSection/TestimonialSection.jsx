@@ -3,14 +3,14 @@ import TestimonialCard from "../TestimonialCard/TestimonailCard";
 
 const TestimonialSection = () => {
   const reviews = [
-    {
-      id: 1,
-      name: "Sai Satyadeep Kotla",
-      designation: "Founder&President, Dignity of Noble",
-      casestudy:"Dilizent is delivering a social mission platform, an AI-based Ed tech to the Entrepreneurship journey platform for Dignity of Noble, a public benefit organization for people with barriers. The freemium platform contains the DON's Entrepreneurship course curriculum with exams and quizzes and further builds real business portfolios with real customers for people with barriers",
-      Testimonial:"Dilizent's innovative solutions have consistently exceeded our expectations. Their commitment to excellence and rapid response to our evolving needs have made them an invaluable partner in our technology journey",  
-      img: "https://media.licdn.com/dms/image/C5603AQFmE9jFLj5gsQ/profile-displayphoto-shrink_400_400/0/1648856269331?e=1703116800&v=beta&t=_W4tEAiCVsBYI1fyRtcaXTLcqjESj0qAH5NlZH2uqdY",
-    },
+    // {
+    //   id: 1,
+    //   name: "Sai Satyadeep Kotla",
+    //   designation: "Founder&President, Dignity of Noble",
+    //   casestudy:"Dilizent is delivering a social mission platform, an AI-based Ed tech to the Entrepreneurship journey platform for Dignity of Noble, a public benefit organization for people with barriers. The freemium platform contains the DON's Entrepreneurship course curriculum with exams and quizzes and further builds real business portfolios with real customers for people with barriers",
+    //   Testimonial:"Dilizent's innovative solutions have consistently exceeded our expectations. Their commitment to excellence and rapid response to our evolving needs have made them an invaluable partner in our technology journey",  
+    //   img: "https://media.licdn.com/dms/image/C5603AQFmE9jFLj5gsQ/profile-displayphoto-shrink_400_400/0/1648856269331?e=1703116800&v=beta&t=_W4tEAiCVsBYI1fyRtcaXTLcqjESj0qAH5NlZH2uqdY",
+    // },
     {
       id: 2,
       name: "Mayank Patel",
