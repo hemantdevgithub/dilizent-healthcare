@@ -1,6 +1,7 @@
 import React from 'react';
 import img1 from '/contact/img1.png'
 import { IoTriangleSharp } from 'react-icons/io5'
+import { MdOutlineMail } from "react-icons/md";
 const SmallBanner = () => {
     return (
         <>
@@ -13,17 +14,10 @@ const SmallBanner = () => {
                 </div>
                 <div className='bg-primary  lg:w-[30%] flex relative items-center justify-center'>
                     <IoTriangleSharp className='text-[175px] -left-[88px] -top-[10px] text-primary absolute'></IoTriangleSharp>
-                    <div className='text-white z-10 py-8 flex lg:flex-row gap-4'>
+                    <div className='text-white z-10 py-8 flex items-center lg:flex-row gap-4'>
                         {/* TODO */}
-                        <button>
-                            Icon
-                        </button>
-                        <div>
-                            <h3 className='text-xl'>Call Us 24/7</h3>
-                            <h2 className='text-2xl font-bold'>
-                                (00) 123 456 789
-                            </h2>
-                        </div>
+                        <MdOutlineMail />
+                        info@dilizent.com
                     </div>
                 </div>
             </div>

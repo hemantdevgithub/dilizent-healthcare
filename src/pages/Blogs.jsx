@@ -5,26 +5,11 @@ import FilterMenu from "../components/Blogs/FilterMenu/FilterMenu"
 import useBlogs from "../hooks/useBlogs"
 import { shallow } from "zustand/shallow"
 import BlogCard from "../components/Blogs/BlogSection/BlogCard"
+import Container from "../components/Container/Container"
+import { blogs } from "../constants/blogs"
 
 const Blogs = () => {
-  const { setBlogdata, blogData } = useBlogs(
-    (state) => ({
-      setBlogdata: state.setBlogdata,
-      blogData: state.blogData,
-    }),
-    shallow
-  )
 
-  const getBlog = async () => {
-    const res = await axios.get(
-      "http://mws.dignityofnoble.org/api/v1/blog-posting/published-diligent-topics"
-    )
-    setBlogdata(res.data.data)
-  }
-
-  useEffect(() => {
-    getBlog()
-  }, [])
 
   return (
     <div>
@@ -32,19 +17,19 @@ const Blogs = () => {
         heading={"Blogs"}
         pageName={"Blogs"}
         img={"/blog/top-banner.jpg"}
-      ></TopBanner>
-      <div className="w-[90%] my-20 mx-auto flex flex-col lg:flex-row gap-5">
-        <div className="lg:w-[25%]">
-          <FilterMenu />
-        </div>
-        <div className="w-full lg:w-[75%]">
-          <div className="w-full lg:px-5 grid grid-cols-1 lg:grid-cols-2 gap-2">
-            {blogData?.map((blog) => (
-              <BlogCard key={blog.id} {...blog} />
-            ))}
+      />
+      <Container>
+        <div className="py-10">
+          <h1 className="text-center text-3xl font-rubik font-semibold text-primary">Our Blogs</h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {
+              blogs.map(blog => (
+                <BlogCard {...blog} />
+              ))
+            }
           </div>
         </div>
-      </div>
+      </Container>
     </div>
   )
 }

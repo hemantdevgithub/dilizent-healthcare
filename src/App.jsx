@@ -9,6 +9,7 @@ import ProfileMiddleware from "./Hoc/ProfileMiddleware";
 import FAQ from "./pages/FAQ";
 import Solutions from "./pages/Solutions";
 import SolutionDetails from "./pages/SolutionDetails";
+import ScrollToTop from "./components/shared/ScrollToTop";
 
 // for components and page loading
 const Home = lazy(() => import("./pages/Home"));
@@ -30,6 +31,7 @@ const Login = lazy(() => import("./components/login/Login"));
 const App = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
       <Toastcontainer />
       <Suspense fallback={<Loader />}>

@@ -3,32 +3,21 @@ import { FaArrowRight } from "react-icons/fa"
 import { Link } from "react-router-dom"
 import moment from "moment"
 
-const BlogCard = ({
-  createdAt,
-  content,
-  topic_title,
-  topic_desc,
-  image_url,
-}) => {
-  const id = createdAt.length + topic_title.length + topic_desc.length
+const BlogCard = ({ id, title, introduction, sections, conclusion }) => {
 
   return (
-    <div className="rounded-xl border shadow-lg">
+    <div className="rounded-xl h-full border shadow-lg">
       <img
-        src={image_url}
+        src="https://s35764.pcdn.co/wp-content/uploads/2022/11/KLG-BMKT-emeritus-650x325.jpg.optimal.jpg"
         className="rounded-xl rounded-b-none object-cover w-full h-[200px]"
         alt=""
       />
       <div className="my-4 px-5 space-y-4">
-        <h2 className="text-xl text-justify text-secondary font-bold">
-          {topic_title}
+        <h2 className="text-[22px] text-primary font-rubik font-semibold">
+          {title}
         </h2>
-        {/* <div className='text-accent'>
-                    {content}
-                </div> */}
-        <p>{topic_desc}...</p>
-        <p className="text-primary font-semibold">
-          Date: {moment(createdAt).format("MMMM Do YYYY")}
+        <p className="text-sm text-accent">
+          {introduction?.slice(0, 250)}...
         </p>
       </div>
       <div className="px-5 my-5">

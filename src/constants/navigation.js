@@ -17,6 +17,7 @@ export const NavigationURls = [
   },
   { id: 6456, label: "About Us", redirect: "/about" },
   { id: 34234, label: "Case Study & Testimonials", redirect: "/testimonials" },
+  { id: 34234, label: "Blogs", redirect: "/blogs" },
   // { id: 2345, label: "Contact", redirect: "/contact" },
   // { id: 2376, label: "Find Talent", redirect: "/freelancers" },
   // { id: 2349, label: "Find Agencies", redirect: "/agencies" },

@@ -4,13 +4,30 @@ import { BsDot } from 'react-icons/bs'
 import SmallBanner from '../Contact/SmallBanner/SmallBanner';
 import { Link } from 'react-router-dom';
 const Footer = () => {
+    const redirects = [
+        { id: 1, label: "Home", redirect: "/" },
+        { id: 1, label: "Solutions", redirect: "/solutions" },
+        { id: 1, label: "About Us", redirect: "/about" },
+        { id: 1, label: "Case Studies", redirect: "/testimonials" },
+        { id: 1, label: "FAQ", redirect: "/faq" },
+        { id: 1, label: "Contact", redirect: "/contact" },
+    ];
+    const solutions = [
+        { id: 1, label: "Provider Data Management", redirect: "/solutions/provider-data-management" },
+        { id: 1, label: "Workforce Management", redirect: "/solutions/workforce-management" },
+        { id: 1, label: "Talent Management", redirect: "/solutions/talent-management" },
+        { id: 1, label: "Access Management", redirect: "/solutions/access-management" },
+        { id: 1, label: "Spend Management", redirect: "/solutions/spend-management" },
+        { id: 1, label: "Contract Management", redirect: "/solutions/contract-management" },
+        { id: 1, label: "Compliance Quality & Safety", redirect: "/solutions/compliance-quality-safety" },
+    ]
     return (
         <div>
             <SmallBanner></SmallBanner>
             <div className='bg-white flex items-center relative'>
                 <img src="/contact/footer1.png" className='bottom-0 h-64 hidden lg:block absolute left-0' alt="" />
                 <img src="/contact/footer2.png" className='top-0 h-64 absolute right-0 hidden lg:block' alt="" />
-                <div className='lg:w-[78%] px-4 py-16  mx-auto grid grid-cols-1 lg:grid-cols-4'>
+                <div className='lg:w-[90%] px-4 py-16  mx-auto grid grid-cols-1 lg:grid-cols-4'>
                     <div className='p-10 space-y-5'>
                         <img src="/logo/logo.png" className='h-16 rounded-full' alt="" />
                         <p className='text-accent text-[13px] font-semibold'>
@@ -37,41 +54,28 @@ const Footer = () => {
                     <div className='p-10'>
                         <h2 className='text-xl font-bold mb-6'>Company</h2>
                         <ul className='space-y-1 text-accent font-semibold'>
-                            <Link to={'/'} className='hover:text-primary flex items-center'>
-                                <BsDot className='text-3xl text-primary' /> About Us
-                            </Link>
-                            <Link to={'/'} className='hover:text-primary flex items-center'>
-                                <BsDot className='text-3xl text-primary' /> Services
-                            </Link>
-                            <Link to={'/faq'} className='hover:text-primary flex items-center'>
-                                <BsDot className='text-3xl text-primary' /> FAQ
-                            </Link>
-                            <Link to={'/'} className='hover:text-primary flex items-center'>
-                                <BsDot className='text-3xl text-primary' /> Blog Standard
-                            </Link>
-                            <Link to={'/'} className='hover:text-primary flex items-center'>
-                                <BsDot className='text-3xl text-primary' /> Contact Us
-                            </Link>
+
+                            {
+                                redirects.map(r => (
+                                    <Link to={r.redirect} className='hover:text-primary flex items-center'>
+                                        <BsDot className='text-3xl text-primary' />
+                                        {r.label}
+                                    </Link>
+                                ))
+                            }
                         </ul>
                     </div>
                     <div className='p-10'>
                         <h2 className='text-xl font-bold mb-6 duration-300'>Solutions</h2>
                         <ul className='space-y-1 text-accent font-semibold'>
-                            <li className='hover:text-primary flex items-center'>
-                                <BsDot className='text-3xl text-primary' /> Advance Analytic
-                            </li>
-                            <li className='hover:text-primary flex items-center'>
-                                <BsDot className='text-3xl text-primary' /> Business Services
-                            </li>
-                            <li className='hover:text-primary flex items-center'>
-                                <BsDot className='text-3xl text-primary' /> Consulting Services
-                            </li>
-                            <li className='hover:text-primary flex items-center'>
-                                <BsDot className='text-3xl text-primary' /> Consumer Product
-                            </li>
-                            <li className='hover:text-primary flex items-center'>
-                                <BsDot className='text-3xl text-primary' /> Financial Services
-                            </li>
+                            {
+                                solutions.map(s => (
+                                    <Link to={s.redirect} className='hover:text-primary flex items-center'>
+                                        <BsDot className='text-3xl text-primary' />
+                                        {s.label}
+                                    </Link>
+                                ))
+                            }
                         </ul>
                     </div>
                     <div className='rounded-xl p-9 h-[270px] flex items-center'
