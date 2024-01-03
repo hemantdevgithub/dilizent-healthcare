@@ -20,7 +20,7 @@ const BlogDetails = () => {
         img={"/blog/top-banner.jpg"}
       />
       <Container>
-        <div className="py-20 mx-auto space-y-5 w-[80%]">
+        <div className="py-20 mx-auto space-y-5 lg:w-[80%]">
           <img
             src="https://s35764.pcdn.co/wp-content/uploads/2022/11/KLG-BMKT-emeritus-650x325.jpg.optimal.jpg"
             className="mx-auto w-full rounded-t-md"

@@ -4,7 +4,7 @@ import DetailsHeading from "./DetailsHeading";
 const AboutCompany = () => {
   return (
     <div>
-      <div className="w-[80%] mx-auto space-y-10">
+      <div className=" mx-auto space-y-10">
         <div className="flex justify-center items-center my-16">
           <div className="relative ">
             <h2 className="text-3xl lg:text-[50px] text-center text-secondary font-bold">
