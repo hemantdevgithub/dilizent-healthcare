@@ -1,6 +1,6 @@
 import ParaText from "../ParaText";
 
-export default function ProjectSlider() {
+export default function ProjectSlider({ heading, subHeading, img }) {
   return (
     <div
       className="
@@ -11,8 +11,8 @@ export default function ProjectSlider() {
       <img
         className="
       w-full
-      rounded-md"
-        src="/home/project-1.jpg"
+      rounded-md h-[400px] object-cover"
+        src={img}
         alt=""
       />
 
@@ -38,7 +38,7 @@ export default function ProjectSlider() {
         transition-up
         bg-white"
         >
-          <ParaText textColor="text-primary">Digital Marketing</ParaText>
+          <ParaText textColor="text-primary">{heading}</ParaText>
           <h4
             className="
             text-[28px]
@@ -46,7 +46,7 @@ export default function ProjectSlider() {
             text-secondary
           "
           >
-            Market Analysis
+            {subHeading}
           </h4>
         </div>
       </div>

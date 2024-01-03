@@ -17,7 +17,7 @@ const About = () => {
           <AboutCompany />
         </div>
       </Container>
-      {/* <TeamMembers/> */}
+      <TeamMembers/>
     </div>
   );
 };

@@ -2,56 +2,39 @@ import React from "react";
 import TestimonialCard from "../TestimonialCard/TestimonailCard";
 
 const TestimonialSection = () => {
-  const reviews = [
-    // {
-    //   id: 1,
-    //   name: "Sai Satyadeep Kotla",
-    //   designation: "Founder&President, Dignity of Noble",
-    //   casestudy:"Dilizent is delivering a social mission platform, an AI-based Ed tech to the Entrepreneurship journey platform for Dignity of Noble, a public benefit organization for people with barriers. The freemium platform contains the DON's Entrepreneurship course curriculum with exams and quizzes and further builds real business portfolios with real customers for people with barriers",
-    //   Testimonial:"Dilizent's innovative solutions have consistently exceeded our expectations. Their commitment to excellence and rapid response to our evolving needs have made them an invaluable partner in our technology journey",  
-    //   img: "https://media.licdn.com/dms/image/C5603AQFmE9jFLj5gsQ/profile-displayphoto-shrink_400_400/0/1648856269331?e=1703116800&v=beta&t=_W4tEAiCVsBYI1fyRtcaXTLcqjESj0qAH5NlZH2uqdY",
-    // },
+  const testimonials = [
     {
       id: 2,
-      name: "Mayank Patel",
-      img: "https://media.licdn.com/dms/image/C4D03AQF_dETSxGskag/profile-displayphoto-shrink_400_400/0/1651202231057?e=1703116800&v=beta&t=nclSL2CER2MSwmoaVwZ_sqC6US9X4C8kG2EI6N7oQ_4",
-      designation: "Director, Noblespiritz",
+      name: "Nitin Gupta",
+      designation: "Director, PrimeWell Health Group",
       casestudy:
         "Dilizent is building a digital platform solution for NobleSpiritz, a non-profit based out of the USA. The digital platform will help people with berries to receive free job skill material from top-class tutors and mentors from various parts of the world.",
-      Testimonial:"Working with Dilizent has been a game-changer for our business. Their expertise and dedication to delivering top-notch technology solutions have driven our success to new heights",
-      
+      testimonial:
+        "Working with Dilizent has been a game-changer for our business. Their expertise and dedication to delivering top-notch technology solutions have driven our success to new heights.",
+      img: "https://t4.ftcdn.net/jpg/03/11/50/27/360_F_311502737_TZ2RJj273mcoaZyKBSHqbdM7QMcb6HfP.jpg",
     },
-    // {
-    //   id: 3,
-    //   name: "Phani Phenumatsa",
-    //   img: "https://mediclinicals.com/wp-content/uploads/2021/10/MEDICLINICALS-logo.pnghttps://mediclinicals.com/wp-content/uploads/2021/10/MEDICLINICALS-logo.png",
-    //   designation: "Director, Mediclinicals",
-    //   casestudy:
-    //     "When we first approached Globallyz, we were struggling to reach our target audience and generate leads. But their team quickly assessed our needs and developed a comprehensive marketing strategy that has transformed our business",
-    //   Testimonial:"hi",
-        
-    // },
     {
       id: 4,
-      name: "Phani",
-      designation: "Sr Director, Ravsol",
+      name: "Rahul Mehta",
+      designation: "Sr Director, HealthScribe Systems",
       casestudy:
-        "Dilizent built a professional ATS platform for Ravsol that helps Ravsol to track jobs and applicants.        ",
-      img: "https://media.licdn.com/dms/image/C4E03AQGH2XhK-l5g2A/profile-displayphoto-shrink_400_400/0/1561928039108?e=1703116800&v=beta&t=Pb-aUfg1yABHSpM-hF_PClsk2hf26PsUmiYgfLxwNkQ",
-      Testimonial:"Dilizent has truly transformed the way we approach technology. Their team's deep knowledge and dedication to our project have resulted in not just successful delivery but a strategic partnership",
-   
+        "Dilizent built a professional ATS platform for Ravsol that helps Ravsol to track jobs and applicants.",
+      testimonial:
+        "Dilizent has truly transformed the way we approach technology. Their team's deep knowledge and dedication to our project have resulted in not just successful delivery but a strategic partnership.",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFwg1ijx9-eej5d1nPCy1FsZ1zjQD-EWa5pA&usqp=CAU",
     },
     {
       id: 5,
-      name: "NAVEEN",
-      designation: "Director,Mediclinicals",
+      name: "Smita Joshi",
+      designation: "Director, CareSoft Technologies",
       casestudy:
         "Dilizent has built claims double adjudication and a healthcare asset management platform for Mediclinicals.",
-      Testimonial:"Dilizent is not just a technology partner; they're an extension of our team. Their proactive approach and reliable delivery have significantly enhanced our business operations.",
-        img: "",
+      testimonial:
+        "Dilizent is not just a technology partner; they're an extension of our team. Their proactive approach and reliable delivery have significantly enhanced our business operations.",
+      img: "https://static.everypixel.com/ep-gallerystock/1128/7181/7247/03361/11287181724703361572.jpg",
     },
-   
   ];
+
 
   return (
     <div className="py-20">
@@ -67,7 +50,7 @@ const TestimonialSection = () => {
       {/* Testimonials */}
       <div className="w-[75%] mx-auto">
         {/* mapping reviews */}
-        {reviews?.map((review) => (
+        {testimonials?.map((review) => (
           <TestimonialCard key={review?.id} review={review} />
         ))}
       </div>

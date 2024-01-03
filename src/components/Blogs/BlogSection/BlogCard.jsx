@@ -3,12 +3,12 @@ import { FaArrowRight } from "react-icons/fa"
 import { Link } from "react-router-dom"
 import moment from "moment"
 
-const BlogCard = ({ id, title, introduction, sections, conclusion }) => {
+const BlogCard = ({ id, img, title, introduction, sections, conclusion }) => {
 
   return (
     <div className="rounded-xl h-full border shadow-lg">
       <img
-        src="https://s35764.pcdn.co/wp-content/uploads/2022/11/KLG-BMKT-emeritus-650x325.jpg.optimal.jpg"
+        src={img}
         className="rounded-xl rounded-b-none object-cover w-full h-[200px]"
         alt=""
       />

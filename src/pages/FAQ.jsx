@@ -3,66 +3,66 @@ import FAQCollapseCard from '../components/FAQ/FAQCollapseCard';
 import TopBanner from '../components/TopBanner/TopBanner';
 
 const FAQ = () => {
-    const faqData = [
+    const faqs = [
         {
             id: 1,
-            question: "What is your return policy?",
+            question: "What healthcare IT solutions do you provide?",
             answer:
-                "Our return policy allows you to return items within 30 days of purchase for a full refund. Please make sure the item is unused and in its original packaging.",
+                "We offer a range of healthcare IT solutions, including Electronic Health Records (EHR), Health Information Exchange (HIE), Telehealth services, and more. Our solutions are designed to enhance patient care, streamline operations, and improve overall healthcare management.",
         },
         {
             id: 2,
-            question: "How can I track my order?",
+            question: "How can your IT solutions benefit healthcare providers?",
             answer:
-                "You can easily track your order by logging into your account on our website and navigating to the 'Order History' section. There, you'll find detailed information about your order's status and shipping progress.",
+                "Our healthcare IT solutions aim to improve efficiency, reduce administrative burdens, and enhance the overall quality of patient care. By implementing our systems, healthcare providers can experience streamlined workflows, improved data accuracy, and better collaboration among healthcare professionals.",
         },
         {
             id: 3,
-            question: "Do you offer international shipping?",
+            question: "What security measures do you have in place to protect patient data?",
             answer:
-                "Yes, we offer international shipping to most countries. Shipping costs and delivery times may vary depending on your location. Please check our Shipping & Delivery page for more information.",
+                "Ensuring the security and privacy of patient data is a top priority. We implement robust security measures, including encryption, access controls, and regular security audits, to safeguard patient information and comply with healthcare data protection regulations.",
         },
         {
             id: 4,
-            question: "What payment methods do you accept?",
+            question: "Can your IT solutions integrate with existing healthcare systems?",
             answer:
-                "We accept major credit cards, including Visa, MasterCard, and American Express. Additionally, we also accept PayPal and Apple Pay for your convenience.",
+                "Yes, our healthcare IT solutions are designed to seamlessly integrate with existing systems, such as Electronic Medical Records (EMR) and laboratory information systems. This integration helps in maintaining data continuity and facilitates a more cohesive healthcare ecosystem.",
         },
         {
             id: 5,
-            question: "Can I change or cancel my order?",
+            question: "How do you ensure compliance with healthcare regulations?",
             answer:
-                "You can change or cancel your order within 24 hours of placing it. After that, our processing may have already begun, and changes may not be possible. Please contact our customer support for assistance.",
+                "Ensuring compliance with healthcare regulations is a fundamental aspect of our IT solutions. We stay updated with the latest healthcare regulations and tailor our systems to adhere to standards such as HIPAA, ensuring that healthcare organizations remain compliant and avoid legal issues.",
         },
         {
             id: 6,
-            question: "What is your warranty policy?",
+            question: "Do you provide training for healthcare staff using your IT solutions?",
             answer:
-                "We offer a standard one-year warranty on all our products. If you encounter any issues with your purchase within this period, please contact our customer support, and we'll assist you with warranty claims.",
+                "Yes, we offer comprehensive training programs for healthcare staff to ensure they are proficient in using our IT solutions. Training includes system functionalities, data security best practices, and ongoing support to maximize the benefits of our healthcare IT systems.",
         },
         {
             id: 7,
-            question: "How do I reset my password?",
+            question: "What is the implementation process for your healthcare IT solutions?",
             answer:
-                "To reset your password, click on the 'Forgot Password' link on the login page. You'll receive instructions via email on how to reset your password securely.",
+                "Our implementation process involves a thorough assessment of the healthcare environment, customization of solutions to meet specific needs, and a phased rollout plan. We work closely with healthcare organizations to ensure a smooth transition and minimal disruptions during implementation.",
         },
         {
             id: 8,
-            question: "What are your customer support hours?",
+            question: "How can healthcare providers contact your support team?",
             answer:
-                "Our customer support team is available Monday through Friday from 9:00 AM to 6:00 PM (local time). You can reach us via email at support@example.com or by phone at +1-123-456-7890.",
+                "Our customer support team is available 24/7 to assist healthcare providers. You can contact us through our dedicated support portal, via email at support@healthcareitcompany.com, or by phone at +1-123-456-7890 for immediate assistance.",
         },
         {
             id: 9,
-            question: "How can I return a defective product?",
+            question: "Can your IT solutions assist in improving patient engagement?",
             answer:
-                "If you receive a defective product, please contact our customer support immediately. We will provide you with instructions on how to return the item, and we'll cover the return shipping costs.",
+                "Yes, our healthcare IT solutions include features aimed at improving patient engagement. This may include patient portals, appointment scheduling systems, and secure communication channels, all designed to enhance the overall patient experience and involvement in their healthcare journey.",
         },
         {
             id: 10,
-            question: "Do you offer bulk discounts?",
+            question: "What advancements in healthcare technology are you currently working on?",
             answer:
-                "Yes, we offer bulk discounts on large orders. Please contact our sales team at sales@example.com to inquire about bulk pricing and discounts for your specific needs.",
+                "We are committed to staying at the forefront of healthcare technology. Our research and development team is actively working on advancements such as AI-driven diagnostics, interoperability enhancements, and innovative solutions to address emerging challenges in the healthcare industry.",
         },
     ];
     return (
@@ -81,7 +81,7 @@ const FAQ = () => {
                 </div>
                 <div className='lg:w-[70%] mx-auto transition my-10'>
                     {
-                        faqData.map(data => <FAQCollapseCard key={data.id} data={data} />)
+                        faqs.map(data => <FAQCollapseCard key={data.id} data={data} />)
                     }
                 </div>
             </div>

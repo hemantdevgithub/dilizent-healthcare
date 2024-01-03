@@ -1,6 +1,7 @@
 export const blogs = [
   {
     id: 1,
+    img: "https://teambuilding.com/wp-content/uploads/2023/01/team-building-ideas-for-healthcare-professionals.jpg",
     title:
       "Embracing the Future: A Journey through Digital Transformation in Healthcare Operations",
     introduction:
@@ -27,6 +28,7 @@ export const blogs = [
   },
   {
     id: 2,
+    img: "https://www.cognihab.com/blog/assets/admin/uploads/Metaverse%20in%20the%20healthcare%20industry.jpg",
     title:
       "Understanding Provider Data Management Challenges: A Comprehensive Breakdown",
     introduction:
@@ -64,6 +66,7 @@ export const blogs = [
   },
   {
     id: 3,
+    img: "https://www.liveabout.com/thmb/YlMZcLPqvy4Np4XSSFzzNZdu3YE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/healthcare-medical-job-titles-20614942-edit-03b544e0fefa40bd85dfc97d6e2d87f3.jpg",
     title:
       "Dilizent's Provider Data Management Solutions: Addressing Healthcare Challenges",
     introduction:
@@ -105,6 +108,7 @@ export const blogs = [
   },
   {
     id: 4,
+    img: "https://sph.umich.edu/pursuit/2019posts/2019images/global-health-work-inform-transform-us-healthcare_670_350.jpg",
     title:
       "Best Practices for Effective Provider Data Management: Ensuring Accuracy in a Dynamic Healthcare Landscape",
     introduction:
